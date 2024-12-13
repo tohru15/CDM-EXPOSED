@@ -1,0 +1,152 @@
+body {
+    font-family: Arial, sans-serif;
+     margin: 0;
+     padding: 0;
+     background-image: url(/assets/hymnbackground.png); 
+     background-size: cover; 
+     background-position: center;
+    color:black;
+    font-size: 10rem;
+    }
+
+
+.container {
+    text-align: center;
+    padding: 50px;
+  background-color: rgba(0, 0, 0, 0.1);
+  margin: 20px auto;
+  border-radius: 10px; 
+   max-width: 600px;
+ filter: blur(0px); 
+  -webkit-backdrop-filter: blur(5px);
+  backdrop-filter: blur(5px);
+}
+
+h1 {
+    font-size: 2rem;
+    margin-bottom: 20px;
+    color: white;
+}
+
+p {
+    font-size: 1.2rem;
+    line-height: 1.8;
+    margin: 10px 0;
+}
+
+.primary-navigation {
+    display: flex;
+    justify-content: center;
+    padding: 15px;
+    background-color: #fff;
+    font-family: 'Arial', sans-serif;
+  }
+  
+  .primary-navigation ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+  }
+  
+  .primary-navigation li {
+    margin-right: 25px;
+    position: relative;
+  }
+  
+  .primary-navigation a {
+    display: block;
+    color: black;
+    font-variant: small-caps;
+    text-align: center;
+    padding: 12px 20px;
+    text-decoration: none;
+    font-size: 18px;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+  }
+  
+  .primary-navigation a:hover {
+    background-color: white;
+    color: black;
+    font-variant: small-caps;
+    transform: translateY(-3px);
+    border-style: solid;
+    border-color: aqua;
+    border-radius: 50px;
+  }
+  
+  .primary-navigation .dropdown {
+    display: none;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    background-color: white;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    min-width: 200px;
+    z-index: 1;
+  }
+  
+  .primary-navigation li:hover .dropdown {
+    display: block;
+  }
+  
+  .primary-navigation .dropdown li a {
+    padding: 12px;
+    color: black;
+    font-size: 16px;
+    text-align: center;
+    text-decoration: none;
+    border-bottom: 1px solid palevioletred;
+  }
+  
+  .primary-navigation .dropdown li a:hover {
+    background-color: lightblue;
+    color: brown;
+  }
+  
+  .signout-button {
+    margin-left: auto; 
+    padding: 5px;
+  }
+  
+  .signout-button img {
+    width: 24px; 
+    height: auto;
+    border-radius: 40%;
+  }
+
+  .footer {
+    width: 100%; 
+    background: linear-gradient(90deg, #FFE38B, #FFDA4D, #FFE694);
+    color: black;
+    text-align: center; 
+    padding: 20px 0;
+    box-sizing: border-box;
+    margin-top: auto; 
+    display: flex;
+    justify-content: center; 
+    align-items: center; 
+  }
+  
+  .footer p {
+    margin: 0; 
+    font-size: 16px; 
+  }
+  
+  @media (max-width: 768px) {
+    .member {
+      width: 100%;
+      max-width: 300px;
+    }
+  
+    .member-info {
+      flex-direction: column;
+      align-items: center;
+      text-align: center;
+    }
+  
+    .member-info img {
+      margin-bottom: 10px;
+    }
+  }

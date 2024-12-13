@@ -1,0 +1,263 @@
+<!DOCTYPE html>
+<html lang="en">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>School Facilities</title>
+    <style>
+        html, body {
+            margin: 0;
+            padding: 50px;
+            font-family: 'Arial', sans-serif;
+            font-size: 100%;
+            height: 100%;
+            box-sizing: border-box;
+            background-color: rgba(98, 136, 75, 1);
+            background-size: cover;
+          }
+        
+
+        
+header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    background-color: rgba(255, 255, 255, 0.9); 
+    z-index: 1000; 
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2); 
+  }
+  
+  .primary-navigation {
+    display: flex;
+    justify-content: center;
+    padding: 15px;
+    background-color: #fff;
+    font-family: 'Arial', sans-serif;
+  }
+  
+  .primary-navigation ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+  }
+  
+  .primary-navigation li {
+    margin-right: 25px;
+    position: relative;
+  }
+  
+  .primary-navigation a {
+    display: block;
+    color: black;
+    font-variant: small-caps;
+    text-align: center;
+    padding: 12px 20px;
+    text-decoration: none;
+    font-size: 18px;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+  }
+  
+  .primary-navigation a:hover {
+    background-color: white;
+    color: black;
+    font-variant: small-caps;
+    transform: translateY(-3px);
+    border-style: solid;
+    border-color: aqua;
+    border-radius: 50px;
+  }
+  
+  .primary-navigation .dropdown {
+    display: none;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    background-color: white;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    min-width: 200px;
+    z-index: 1;
+  }
+  
+  .primary-navigation li:hover .dropdown {
+    display: block;
+  }
+  
+  .primary-navigation .dropdown li a {
+    padding: 12px;
+    color: black;
+    font-size: 16px;
+    text-align: center;
+    text-decoration: none;
+    border-bottom: 1px solid palevioletred;
+  }
+  
+  .primary-navigation .dropdown li a:hover {
+    background-color: lightblue;
+    color: brown;
+  }
+  
+  .signout-button {
+    margin-left: auto; 
+    padding: 5px;
+  }
+  
+  .signout-button img {
+    width: 24px; 
+    height: auto;
+    border-radius: 40%;
+  }
+
+
+        .h2 {
+            text-align: center;
+            background: linear-gradient(90deg, #FFE38B, #FFDA4D, #FFE694);
+            color: black;
+            padding: 20px;
+            padding-bottom: auto;
+        }
+
+        .facilities-container {
+            display: flex;
+            flex-direction: column; 
+            align-items: center; 
+            gap: 20px; 
+            padding: 40px;
+        }
+        
+        .facility-card {
+            background-color: rgba(255, 255, 255, 0.9);
+            border: 1px solid #ddd;
+            border-radius: 8px;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+            width: 80%; 
+            max-width: 5000px; 
+            text-align: center;
+            overflow: hidden;
+        }
+        
+        .facility-card img {
+            width: 100%;
+            height: 400px; 
+            object-fit: cover;
+        }
+        
+        .facility-card h3 {
+            margin: 10px 0;
+            color: #333;
+        }
+        
+        .facility-card p {
+            padding: 0 10px 20px;
+            color: #555;
+        }
+        
+        
+        footer {
+            text-align: center;
+            padding: 20px;
+            background: linear-gradient(90deg, #FFE38B, #FFDA4D, #FFE694);
+            color: black;
+            margin-top: 20px;
+        }
+
+        @media (max-width: 768px) {
+          .member {
+            width: 100%;
+            max-width: 300px;
+          }
+        
+          .member-info {
+            flex-direction: column;
+            align-items: center;
+            text-align: center;
+          }
+        
+          .member-info img {
+            margin-bottom: 10px;
+          }
+        }
+    </style>
+
+<body>
+    <header>
+        <nav class="primary-navigation">
+          <ul>
+            <li><a href="#0">Encouragement &dtrif;</a>
+                <ul class="dropdown">
+                    <li><a href="janella.html">Motivational Quotes</a></li>
+                    <li><a href="Wan.html">Bible Verse</a></li>
+                </ul>
+            </li>
+            <li><a href="#0">About the School &dtrif;</a>
+                <ul class="dropdown">
+                    <li><a href="about.html">History</a></li>
+                    <li><a href="Hymn.html">Hymn</a></li>
+                    <li><a href="mv.html">Core Values</a></li>
+                </ul>
+            </li>
+            <li><a href="#0">School Community &dtrif;</a>
+                <ul class="dropdown">
+                    <li><a href="cdmadministrator.html">Officials</a></li>
+                    <li><a href="ssg.html">CSSG</a></li>
+                    <li><a href="ics_ssc.html">ICS Officers</a></li>
+                    <li><a href="ibe.html">IBE Officers</a></li>
+                    <li><a href="ite.html">ITE Officers</a></li>
+                    <li><a href="facilities.html">Facilities</a></li>
+                </ul>
+            </li>
+            <li><a href="login.html" class="signout-button"> <img src="/assets/logout.png" alt="SignOut-button"></a></li>
+          </ul>    
+        </nav>
+      </header>
+
+    <div class="h2">
+        <h2>Our School Facilities</h2>
+        <p>Explore the facilities that help us provide quality education and holistic development.</p>
+    </div>
+
+    <div class="facilities-container">
+        <div class="facility-card">
+            <img src="/assets/NEW_BUILDING.jpg" alt="NEW_BUILDING">
+            <h3>NEW BUILDING</h3>
+            <p>The new building at Colegio de Montalban houses the information desk, faculty offices for all departments, and a spacious function hall. It also serves as the home for the students of the College of Education, providing a modern and collaborative environment for both academic and extracurricular activities.</p>
+        </div>
+
+        <div class="facility-card">
+            <img src="/assets/OLD_BUILDING.jpg" alt="OLD_BUILDING">
+            <h3>OLD BUILDING</h3>
+            <p> The Old Building at Colegio de Montalban houses the Management Information Systems (MIS) and computer laboratories, providing essential resources for students and staff. It also accommodates general services and is home to students from the Business, BSIT, and BCPE programs, offering a dynamic environment for learning and professional development.</p>
+        </div>
+
+        <div class="facility-card">
+            <img src="/assets/OFFICES.jpg" alt="OFFICES">
+            <h3>OFFICES</h3>
+            <p>The office complex at Colegio de Montalban includes key facilities such as the Clinic, Registrar's Office, and the offices of the President and Vice Presidents. It also houses essential services like the Library, Guidance Office, and Accounting Office, providing students and staff with convenient access to academic, health, and administrative support.</p>
+        </div>
+
+        <div class="facility-card">
+            <img src="/assets/CANTEEN.jpg" alt="Canteen">
+            <h3>CANTEEN</h3>
+            <p>A spacious canteen providing healthy and affordable food options.</p>
+        </div>
+
+        <div class="facility-card">
+            <img src="/assets/COURT.jpg" alt="Court">
+            <h3>COURT</h3>
+            <p>Well-maintained courts for basketball and other sports activities.</p>
+        </div>
+
+        <div class="facility-card">
+            <img src="/assets/PARKINGLOT.jpg" alt="Parking Lot">
+            <h3>PARKING LOT</h3>
+            <p>The school parking lot is a secure, well-organized space with designated areas for vehicles, clear signage, and ample lighting, ensuring safety and convenience for students, staff, and visitors.</p>
+        </div>
+    </div>
+
+
+    <footer>
+        &copy; 2024 Colegio de Montalban. All rights reserved.
+    </footer>
+</body>
+</html>

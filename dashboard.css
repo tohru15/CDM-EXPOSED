@@ -1,0 +1,132 @@
+/* body */
+html, body {
+    height: 100%;
+    margin: 0;
+    overflow: hidden;
+}
+
+/* background image */
+.login-background {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    z-index: -1;
+}
+
+/* CDM logo */
+.cdmlogo {
+    position: absolute;
+    top: 30px;
+    left: 75px;
+    width: 200px;
+    height: 200px;
+    object-fit: cover;
+}
+
+/* bagongmontalban logo */
+.bagongmontalbanlogo {
+    position: absolute;
+    top: 30px;
+    left: 300px;
+    width: 250px;
+    height: 250px;
+    object-fit: contain;
+}
+
+/* (h1) */
+.header-text h1 {
+    text-align: left;
+    font-size: 5em;
+    color: black;
+    padding-left: 100px;
+    margin-top: 300px;
+}
+
+/* Navigation styles */
+.primary-navigation {
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    font-family: 'Arial', sans-serif;
+    background-color: none;
+}
+
+.primary-navigation ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+}
+
+.primary-navigation li {
+    margin-right: 25px;
+    position: relative;
+}
+
+.primary-navigation a {
+    display: block;
+    color: black;
+    font-variant: small-caps;
+    text-align: center;
+    padding: 12px 20px;
+    text-decoration: none;
+    font-size: 18px;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+/* Hover effect for navigation links */
+.primary-navigation a:hover {
+    background-color: white;
+    color: black;
+    font-variant: small-caps;
+    transform: translateY(-3px);
+    border-style: solid;
+    border-color: aqua;
+    border-radius: 50px;
+}
+
+/* Dropdown menu styling */
+.primary-navigation .dropdown {
+    display: none;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    background-color: white;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    min-width: 200px;
+    z-index: 1;
+}
+
+.primary-navigation li:hover .dropdown {
+    display: block;
+}
+
+.primary-navigation .dropdown li a {
+    padding: 12px;
+    color: black;
+    font-size: 16px;
+    text-align: center;
+    text-decoration: none;
+    border-bottom: 1px solid palevioletred;
+}
+
+.primary-navigation .dropdown li a:hover {
+    background-color: lightblue;
+    color: brown;
+}
+
+/* Signout Button Styling */
+.signout-button {
+    margin-left: auto; 
+    padding: 5px;
+}
+
+.signout-button img {
+    width: 24px; 
+    height: auto;
+    border-radius: 40%;
+}

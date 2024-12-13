@@ -1,0 +1,220 @@
+html, body {
+  margin: 0;
+  padding: 0;
+  font-family: 'Arial', sans-serif;
+  font-size: 60%;
+  height: 100%;
+  box-sizing: border-box;
+}
+
+.background {
+  background-image: url(/assets/school.jpg);
+  background-position: center;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  z-index: -1;
+}
+
+header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  background-color: rgba(255, 255, 255, 0.9); 
+  z-index: 1000; 
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+}
+
+.primary-navigation {
+  display: flex;
+  justify-content: center;
+  padding: 15px;
+  background-color: #fff;
+  font-family: 'Arial', sans-serif;
+}
+
+.primary-navigation ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+}
+
+.primary-navigation li {
+  margin-right: 25px;
+  position: relative;
+}
+
+.primary-navigation a {
+  display: block;
+  color: black;
+  font-variant: small-caps;
+  text-align: center;
+  padding: 12px 20px;
+  text-decoration: none;
+  font-size: 18px;
+  transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+.primary-navigation a:hover {
+  background-color: white;
+  color: black;
+  font-variant: small-caps;
+  transform: translateY(-3px);
+  border-style: solid;
+  border-color: aqua;
+  border-radius: 50px;
+}
+
+.primary-navigation .dropdown {
+  display: none;
+  position: absolute;
+  top: 100%;
+  left: 0;
+  background-color: white;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  min-width: 200px;
+  z-index: 1;
+}
+
+.primary-navigation li:hover .dropdown {
+  display: block;
+}
+
+.primary-navigation .dropdown li a {
+  padding: 12px;
+  color: black;
+  font-size: 16px;
+  text-align: center;
+  text-decoration: none;
+  border-bottom: 1px solid palevioletred;
+}
+
+.primary-navigation .dropdown li a:hover {
+  background-color: lightblue;
+  color: brown;
+}
+
+.signout-button {
+  margin-left: auto; 
+  padding: 5px;
+}
+
+.signout-button img {
+  width: 24px; 
+  height: auto;
+  border-radius: 40%;
+}
+
+.content {
+  padding-top: 80px; 
+  padding-bottom: 50px;
+}
+
+#about {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: top;
+  min-height: 100vh;
+  text-align: center;
+}
+
+.cdmHistory {
+  padding-top: 130px;
+}
+
+.cdmHistory .school {
+  height: 550px;
+  width: 900px;
+  padding-bottom: 30px;
+  padding-top: 40px;
+}
+
+.cdmHistory .txt1 {
+  font-size: 40px;
+  font-family: Jomolhari;
+  font-weight: 100;
+  text-shadow: 2px 3px 5px rgba(0, 0, 0, 0.4);
+  text-transform: uppercase;
+}
+
+.History, .History2 {
+  position: relative;
+  max-width: 80%;
+  margin: auto;
+  padding: 30px;
+}
+
+.History .contentbg, .contentbg2 {
+  padding: 50px;
+  background-image: url(/assets/hymn_bg.jpg);
+  background-repeat: no-repeat;
+  border-radius: 30px;
+  background-size: cover;
+  position: relative;
+}
+
+.History .context, .contentbg2 {
+  font-family: Didact Gothic;
+  line-height: 1.8;
+  text-align: justify;
+  font-size: 2rem;
+  font-weight: 500;
+}
+
+.context2 {
+  font-family: Didact Gothic;
+  line-height: 1.5;
+  text-align: justify;
+  list-style-type: disc;
+  margin-left: 20px;
+}
+
+.context2 li {
+  margin-bottom: 15px;
+}
+
+.footer {
+  width: 100%; 
+  background: linear-gradient(90deg, #FFE38B, #FFDA4D, #FFE694);
+  color: black;
+  text-align: center; 
+  padding: 20px 0;
+  box-sizing: border-box;
+  margin-top: auto; 
+  display: flex;
+  justify-content: center; 
+  align-items: center; 
+}
+
+.footer p {
+  margin: 0; 
+  font-size: 16px; 
+}
+
+@media (max-width: 768px) {
+  .member {
+    width: 100%;
+    max-width: 300px;
+  }
+
+  .member-info {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+
+  .member-info img {
+    margin-bottom: 10px;
+  }
+}
+
+    
